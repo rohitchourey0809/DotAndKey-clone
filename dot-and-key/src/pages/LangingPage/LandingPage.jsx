@@ -11,7 +11,7 @@ const LandingPage = () => {
     <>
       <Box className="topcontent">
         <Stack>
-          <Flex align={"center"} gap={4} margin={"80px"}>
+          <Flex align={"center"} gap={4} margin={"130px"}>
             <Box align={"center"}>
               <Link to="/skincare/bodycare">
                 <Img
@@ -99,9 +99,6 @@ const LandingPage = () => {
       <VStack className="SkinProducts">
         <SKINCAREPRODUCTS />
       </VStack>
-      <Box className="footer">
-        <Footer />
-      </Box>
     </>
   );
 };

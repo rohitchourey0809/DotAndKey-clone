@@ -43,14 +43,46 @@ export const CategoryComponent = ({ categoryprop }) => {
   const addtoCard = (e) => {
     console.log("categoryselectedcard", e);
 
-    axios.post("http://localhost:8080/card", e);
+    axios({
+      url: "http://localhost:8080/card",
+      method: "POST",
+      e,
+      params: {
+        category: filterTitle,
+        _page: page,
+      },
+    })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
     <>
       <Box>
         <Center>
-          <Filtercomponent />
+          <Box marginTop={"100px"}>
+            <Center>
+              <Button
+                disabled={page === 1}
+                onClick={() => setpage(page - 1)}
+                backgroundColor={"black"}
+                color={"gold"}
+              >
+                Prev
+              </Button>
+              <Button
+                onClick={() => setpage(page + 1)}
+                backgroundColor={"black"}
+                color={"gold"}
+              >
+                Next
+              </Button>
+            </Center>
+          </Box>
         </Center>
       </Box>
       <VStack
@@ -101,8 +133,8 @@ export const CategoryComponent = ({ categoryprop }) => {
             </Box>
           </Link>
         ))}
-        <Checkout />
       </VStack>
+      <Box> </Box>
     </>
   );
 };

@@ -14,21 +14,26 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 // import { useDispatch } from "react-redux";
 
-
-export const Checkout = ({ card, checkOutHandler }) => {
+export const Checkout = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
- 
+  const navigate = useNavigate();
+  const successfull = () => {
+    alert("payment successful");
+    navigate("/");
+  };
+
   return (
     <Box>
       <Button
         rounded={"none"}
-        w={"full"}
-        mt={8}
+        w={1500}
+        mt={20}
         size={"lg"}
         py={"7"}
-        colorScheme={"golden"}
+        colorScheme="gold"
         bg={useColorModeValue("gray.900", "gray.50")}
         onClick={onOpen}
         textTransform={"uppercase"}
@@ -45,7 +50,7 @@ export const Checkout = ({ card, checkOutHandler }) => {
         <ModalContent>
           <ModalHeader>Confirm PurChase</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
+          {/* <ModalBody>
             {card.map((e) => {
               return (
                 <Box key={e.id}>
@@ -75,10 +80,10 @@ export const Checkout = ({ card, checkOutHandler }) => {
                 </Box>
               );
             })}
-          </ModalBody>
+          </ModalBody> */}
 
           <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={checkOutHandler}>
+            <Button colorScheme="blue" mr={3} onClick={successfull}>
               ConFirm
             </Button>
             {/* <Button variant="ghost">ConFirm</Button> */}

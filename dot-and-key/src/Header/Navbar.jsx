@@ -24,10 +24,13 @@ import {
   Avatar,
   Center,
   Text,
+  Icon,
   //   useDisclosure,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { CartCounter } from "../pages/CartPage/CartCounter";
+import { BsCartPlus } from "react-icons/bs";
 
 export const Navbar = () => {
   const [text, settext] = useState("");
@@ -52,15 +55,21 @@ export const Navbar = () => {
   return (
     <>
       <VStack
+        // width="120%"
+
+        margin={"auto"}
+        zIndex={"1"}
         position="fixed"
         overflow={"hidden"}
         border="3px"
         bordercolor={"red"}
         body="0"
+        alignItems="center"
       >
         <Flex
-          boxShadow={"dark-lg"}
-          gap={"400"}
+          gap="500"
+          boxShadow={"light-lg"}
+          margin={"auto"}
           border="2px"
           borderColor="black.50"
           backgroundColor="rgb(253,253,254)"
@@ -101,9 +110,10 @@ export const Navbar = () => {
             <Box
               color="black"
               borderColor="red.500"
-              height="70px"
-              width="200px"
+              height="80px"
               alignItems="center"
+              padding="-10px"
+              marginLeft="30% "
             >
               <Image
                 src="https://cdn.shopify.com/s/files/1/0361/8553/8692/files/unnamed_250x_200x_2x_260x_24408e11-6e3a-4a0c-8327-74d0455f7696_260x.jpg?v=1646547348"
@@ -115,7 +125,7 @@ export const Navbar = () => {
           </Center>
           <Box>
             <Stack>
-              <Flex gap="2">
+              <Flex gap={2}>
                 <Box class="topnav">
                   <Flex>
                     <Input
@@ -150,6 +160,10 @@ export const Navbar = () => {
                     data-icon="bag"
                     aria-expanded="false"
                   >
+                    <Box position="relative">
+                      <CartCounter />
+                      {/* <Icon as={BsCartPlus} boxSize="2.8rem" /> */}
+                    </Box>
                     <span class="cart-link">
                       <svg
                         height="32"
@@ -170,9 +184,7 @@ export const Navbar = () => {
                     {/* </AvatarGroup> */}
                   </Link>
                 </Box>
-                <Box>
-              
-                </Box>
+                <Box></Box>
               </Flex>
             </Stack>
           </Box>

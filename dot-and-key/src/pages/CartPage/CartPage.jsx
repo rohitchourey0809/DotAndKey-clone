@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Button, Center, Heading } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { CardItem } from "./CardItem";
@@ -20,7 +20,7 @@ export const Card = () => {
   return (
     <Box>
       <>
-        <Heading as="h2" size="xl" textAlign="center">
+        <Heading as="h2" size="xl" textAlign="center" marginTop="20px">
           Cart
         </Heading>
         {carddata.length &&
@@ -37,7 +37,10 @@ export const Card = () => {
             );
           })}
       </>
-      <Checkout />
+      <Center>
+        {" "}
+        <Checkout />
+      </Center>
     </Box>
   );
 };

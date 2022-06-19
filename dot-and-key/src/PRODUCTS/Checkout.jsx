@@ -18,24 +18,20 @@ import {
 
 export const Checkout = ({ card, checkOutHandler }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-//   const dispatch = useDispatch();
+  //   const dispatch = useDispatch();
 
-//   const removeProduct = (id) => {
-//     console.log(`going to remove Proudvtcv`, id);
-//     dispatch(deleteProductCard(id));
-//   };
+  //   const removeProduct = (id) => {
+  //     console.log(`going to remove Proudvtcv`, id);
+  //     dispatch(deleteProductCard(id));
+  //   };
   // const deleteItem = (payload) => {
   //   dispatch(emptyCart(payload));
   // };
   return (
-    <Box>
+    <Box zIndex={"-1"}>
       <Button
-        rounded={"none"}
-        w={"full"}
-        mt={8}
-        size={"lg"}
-        py={"7"}
-        colorScheme={"golden"}
+        width={"1000"}
+        color={"golden"}
         bg={useColorModeValue("gray.900", "gray.50")}
         onClick={onOpen}
         textTransform={"uppercase"}
@@ -73,9 +69,7 @@ export const Checkout = ({ card, checkOutHandler }) => {
                     </Box>
                     <Box maxWidth={"250px"} ml="1rem">
                       <Text fontSize={"lg"}>
-                        <Button  >
-                          Remove Item
-                        </Button>
+                        <Button>Remove Item</Button>
                       </Text>
                     </Box>
                   </Flex>

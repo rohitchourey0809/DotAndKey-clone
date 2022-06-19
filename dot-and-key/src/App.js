@@ -14,6 +14,7 @@ import {
   Serum,
 } from "./PRODUCTS/AllSkincareProducts";
 import { Card } from "./pages/CartPage/CartPage";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -28,13 +29,16 @@ function App() {
           <Route path="/signup" element={<SignupCard />} />
           <Route path="/card" element={<Card />} />
           <Route path="/skincare/bodycare" element={<Bodycare />} />
-          <Route path="/skincare/haircare" element={<Haircare />} />
+          <Route path="/skincare/harecare" element={<Haircare />} />
           <Route path="/skincare/neutrition" element={<Neutrition />} />
           <Route path="/skincare/serum" element={<Serum />} />{" "}
           <Route path="/skincare/neutrition" element={<Neutrition />} />
           <Route path="/skincare/moisturizer" element={<Moisturizer />} />
           <Route path="/skincare/:id" element={<ProductsDetailPage />} />
         </Routes>
+      </Box>
+      <Box>
+        <Footer />
       </Box>
     </Box>
   );

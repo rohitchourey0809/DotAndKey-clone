@@ -11,7 +11,6 @@ import {
 import React, { useEffect, useState } from "react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { Checkout } from "./Checkout";
 
 export const SKINCAREPRODUCTS = () => {
   const [filterTitle, setfilterTitle] = useState();

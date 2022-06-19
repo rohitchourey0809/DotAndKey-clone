@@ -8,6 +8,9 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { BsCaretUpSquareFill, BsCartPlusFill } from "react-icons/bs";
 
 import { Rating } from "../../PRODUCTS/Rating";
 import { Checkout } from "./Checkout";
@@ -20,8 +23,34 @@ export const CardItem = ({
   description,
   price,
   perks,
-  removeProduct,
 }) => {
+  // const [deletedata, setdeletedata] = useState([]);
+  // const RemoveProduct = (id) => {
+  //   useEffect(() => {
+  // eslint-disable-next-line no-use-before-define
+  // deleteProductCard(id);
+  //   }, [id]);
+  // };
+
+  const RemoveProduct = (id) => {
+    console.log("deleter id", id);
+    axios
+      .delete(`http://localhost:8080/card/${id}`)
+      .then((response) => {
+        console.log("deleteresponse", response);
+      })
+      // .then((data) => {
+      //   const updateded = axios
+      //     .get("http://localhost:8080/card")
+      //     .then((response) => {
+      //       console.log("deleteresponse", ...updateded);
+      //     });
+      // })
+      .catch((error) => {
+        console.log("deleteresponse", error);
+      });
+  };
+
   return (
     <VStack>
       <Center
@@ -84,7 +113,7 @@ export const CardItem = ({
             </Center>
             <Center>
               <Button
-                // onClick={() => removeProduct(id)}
+                onClick={() => RemoveProduct(id)}
                 variant={"outline"}
                 leftIcon={<DeleteIcon />}
               >
@@ -94,7 +123,6 @@ export const CardItem = ({
           </Box>
         </Box>
       </Center>
-     
     </VStack>
   );
 };
