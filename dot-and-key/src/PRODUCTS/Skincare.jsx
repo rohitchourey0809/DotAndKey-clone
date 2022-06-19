@@ -11,6 +11,7 @@ import {
 import React, { useEffect, useState } from "react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Checkout } from "./Checkout";
 
 export const SKINCAREPRODUCTS = () => {
   const [filterTitle, setfilterTitle] = useState();
@@ -38,7 +39,7 @@ export const SKINCAREPRODUCTS = () => {
       });
   }, [filterTitle, page, query]);
 
-const addtoCard = (e) => {
+  const addtoCard = (e) => {
     console.log("selectedcard", e);
 
     axios.post("http://localhost:8080/card", e);

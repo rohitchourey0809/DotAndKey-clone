@@ -13,6 +13,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Rating } from "./Rating";
 import { Filtercomponent } from "./filtercomponent";
+import { Checkout } from "./Checkout";
 
 export const CategoryComponent = ({ categoryprop }) => {
   console.log(categoryprop, "categoepop");
@@ -100,6 +101,7 @@ export const CategoryComponent = ({ categoryprop }) => {
             </Box>
           </Link>
         ))}
+        <Checkout />
       </VStack>
     </>
   );

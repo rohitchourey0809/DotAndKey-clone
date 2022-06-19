@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 import { Rating } from "../../PRODUCTS/Rating";
+import { Checkout } from "./Checkout";
 
 export const CardItem = ({
   id,
@@ -93,6 +94,7 @@ export const CardItem = ({
           </Box>
         </Box>
       </Center>
+     
     </VStack>
   );
 };

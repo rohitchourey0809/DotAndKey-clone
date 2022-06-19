@@ -19,27 +19,25 @@ export const Card = () => {
   }, []);
   return (
     <Box>
-      <Box>
-        <>
-          <Heading as="h2" size="xl" textAlign="center">
-            Cart
-          </Heading>
-          {carddata.length &&
-            carddata.map((e) => {
-              return (
-                <CardItem
-                  key={e.id}
-                  id={e.id}
-                  title={e.title}
-                  price={e.price}
-                  image={e.images}
-                  description={e.description}
-                />
-              );
-            })}
-        </>
-        {/* <Checkout carddata={carddata} /> */}
-      </Box>
+      <>
+        <Heading as="h2" size="xl" textAlign="center">
+          Cart
+        </Heading>
+        {carddata.length &&
+          carddata.map((e) => {
+            return (
+              <CardItem
+                key={e.id}
+                id={e.id}
+                title={e.title}
+                price={e.price}
+                image={e.images}
+                description={e.description}
+              />
+            );
+          })}
+      </>
+      <Checkout />
     </Box>
   );
 };
