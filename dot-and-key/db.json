@@ -1582,29 +1582,22 @@
   ],
   "card": [
     {
-      "id": "k_hPPmd"
-    },
-    {
-      "id": "dpYq1D7"
-    },
-    {
-      "title": "VITAMIN C GLOW CAPSULE SERUM",
+      "title": "VITAMIN C GLOW PINK CLAY MASK",
       "images": [
-        "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/VITCMOIST.jpg?v=1655302755"
+        "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/1-GreenClayListing_1.jpg?v=1649655908"
       ],
       "size": [
-        "30ml"
+        "85g"
       ],
       "description": [
-        "10x more potent Vs existing serum, with 15% Vitamin C + 0.5% Ferulic acid",
-        "Hydrates the skin overnight, giving it a dewy glow in the morning",
-        "Gel-creme capsule formula with Vitamin E capsules",
-        "Brightens & illuminates dull, tired looking skin",
-        "Fades dark spots, uneven skin tone & stubborn scars",
-        "With time-release technology, it boosts collagen production & skin elasticity"
+        "Layer your skin with the power of pink to treat dullness and clear deep-rooted impurities for glowing, nourished and hydrated skin.",
+        "Featuring a rich, creamy texture with French pink clay and natural vitamin C from Kakadu Plum, it reverses dull, tired skin to reveal a bright, glowing complexion.",
+        "Acerola cherry, the little powerhouse of antioxidants, boosts collagen production to repair skin damage and uneven skin tone.",
+        "Additionally, when kaolin and bentonite clay blends with hyaluronic acid, it removes deep-seated impurities while locking in moisture for clean, soft and bouncy skin.",
+        "Whether you are getting ready for a party or want to give your skin a 'quick pick-up', this soft pink clay mask is the ideal solution for nourished, hydrated and radiant skin."
       ],
       "perks": [
-        "BUY 1 GET 1 On All Serums.Applicable Once Per order. Only For Today",
+        "Get Silicone Applicator Free with this product",
         "FREE Hand Foot duo on orders above 899",
         "Pick your FREE 5-in-1 kit above 1899",
         "FREE Face Roller + Face Oil above 2799",
@@ -1614,23 +1607,11 @@
         "Extra 3% off on all prepaid orders",
         "20% Cashback on all orders"
       ],
-      "category": "Serum and Oil",
-      "price": "1215.78",
-      "discount": 23,
-      "rating": "3.6",
-      "id": "DK0115"
-    },
-    {
-      "id": "7Ynlg1x"
-    },
-    {
-      "id": "pf1hPnh"
-    },
-    {
-      "id": "nCNmChZ"
-    },
-    {
-      "id": "F8_WPI1"
+      "category": "Clay Masks",
+      "price": "1479.73",
+      "discount": 10,
+      "rating": "3.9",
+      "id": "DK0132"
     },
     {
       "title": "DEEP PORE FOAMING CLEANSER",
@@ -1664,34 +1645,19 @@
       "id": "DK0118"
     },
     {
-      "title": "Peace Out Acne Duo",
-      "images": [
-        "https://cdn.shopify.com/s/files/1/0361/8553/8692/products/8904035425604_IK_GUSL_SecondaryImage1.jpg?v=1637735295"
-      ],
-      "size": [
-        "25ml"
-      ],
-      "description": [
-        "An anti acne clay mask that removes toxins to combat recurring acne and skin damage from pollution.",
-        "Supercharged with matcha tea and tamanu oil, it detoxifies and mattifies your skin in just 10 minutes.",
-        "Eucalyptus and neem oil provide a soothing experience, while French Green Clay draws out deep-dwelling impurities to unclog pores.",
-        "Salicylic acid in the face mask minimises the appearance of acne scars, pimples and blemishes.",
-        "A perfect non comedogenic clay mask for congested, acne prone skin."
-      ],
-      "perks": [
-        "Get Silicone Applicator Free with this product",
-        "FREE Hand Foot duo on orders above 899",
-        "Pick your FREE 5-in-1 kit",
-        "FREE Face Roller + Face Oil above 2799",
-        "Additionally, Free Body Lotion on all orders above 899",
-        "Buy 2 Get 2 FREE on Bodycare Range",
-        "BUY 3 Get 25% of on Ikwi products"
-      ],
-      "category": "Acne",
-      "price": "1318.02",
-      "discount": 30,
-      "rating": "3.8",
-      "id": "DK0140"
+      "id": "bsamHuH"
+    },
+    {
+      "id": "U5-Ll8x"
+    },
+    {
+      "id": "xdjA_1m"
+    },
+    {
+      "id": "jgl2tTs"
+    },
+    {
+      "id": "HBeZOew"
     }
   ],
   "userdata": [
@@ -1722,6 +1688,48 @@
       "email": "rohit1995chourey@gmail.com",
       "password": "123",
       "id": 4
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 7
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 8
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 9
+    },
+    {
+      "firstname": "ROHIT",
+      "lastname": "CHOUREY",
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 10
     }
   ],
   "logindata": [
@@ -1729,6 +1737,26 @@
       "email": "rohit_fw15_206@masai.school",
       "password": "123",
       "id": 1
+    },
+    {
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 4
+    },
+    {
+      "email": "rohit_fw15_206@masai.school",
+      "password": "123",
+      "id": 5
     }
   ]
 }
