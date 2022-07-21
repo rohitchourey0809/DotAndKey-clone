@@ -31,7 +31,7 @@ function App() {
           <Route path="/skincare/bodycare" element={<Bodycare />} />
           <Route path="/skincare/harecare" element={<Haircare />} />
           <Route path="/skincare/neutrition" element={<Neutrition />} />
-          <Route path="/skincare/serum" element={<Serum />} />{" "}
+          <Route path="/skincare/serum" element={<Serum />} />
           <Route path="/skincare/neutrition" element={<Neutrition />} />
           <Route path="/skincare/moisturizer" element={<Moisturizer />} />
           <Route path="/skincare/:id" element={<ProductsDetailPage />} />
